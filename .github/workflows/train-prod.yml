@@ -30,7 +30,7 @@ jobs:
 
       - name: Install Azure ML CLI
         run: |
-          az extension add -n ml -y
+          az extension add -n ml --upgrade
 
       - name: Detect Azure ML workspace
         id: detect
